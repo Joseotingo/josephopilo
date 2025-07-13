@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joseph opilo Portfolio</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head> 
+<body>
+  <header>
+    <div class="logo">JJoseph Opilo</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav id="menu">
+      <a onclick="showSection('home')">Home</a>
+      <a onclick="showSection('skills')">Skills</a>
+      <a onclick="showSection('experience')">Experience</a>
+      <a onclick="showSection('education')">Education</a><!--
+      <a onclick="showSection('certifications')">Certifications</a>-->
+      <a onclick="showSection('contact')">Contact</a>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <img src="document/profilepic.jpg" alt="Profile Picture" class="profile-pic">
+      <h2 style="margin-top: 10px; color: #00bcd4;">Joseph Opilo</h2>
+    </div>
+    
+    <div class="details">
+        
+
+      <section id="home" class="active">
+        <p>Hello,</p>
+        <p>You are welcome </p>
+        <h2>Professional Summary</h2>
+        <p>Analytical and detail-oriented Biometrician who has currently graduated and is seeking to gain experience in statistical analysis, biological data modeling, and healthcare research in the real world. Proven expertise in designing experiments, analyzing clinical trial data, and generating actionable insights using tools like R, SAS, and Python. Passionate about applying biostatistics to improve public health, pharmaceutical research, and evidence-based decision-making.</p>
+        <a href="document/Joseph_Opilo_Otingo cv.pdf" class="download-btn" download>Download Resume</a>
+      </section>
+
+      <section id="skills">
+        <h2>Core Skills</h2>
+        <ul>
+          <li><strong>Statistical Tools & Languages:</strong> R, Python, SAS, SPSS, Stata</li>
+          <li><strong>Data Management:</strong> SQL, Excel, REDCap, Epi Info</li>
+          <li><strong>Statistical Techniques:</strong> Regression Analysis, ANOVA, Time Series, Bayesian Modeling</li>
+          <li><strong>Other:</strong> Research Design, Clinical Data Analysis, Epidemiological Studies</li>
+        </ul>
+      </section>
+
+      <section id="experience">
+        <h2>Professional Experience</h2>
+        <h3>Data Analysis Attachment – Kisii County Government, Kisii</h3>
+        <p><em>May 2023 – August 2023</em></p>
+        <ul>
+          <li>Applied survival analysis and logistic regression to assess drug effectiveness</li>
+          <li>Cleaned and managed datasets using R and REDCap</li>
+          <li>Collaborated with cross-functional teams to produce timely reports and dashboards</li>
+          <li>Improved data pipeline efficiency by 25%</li>
+        </ul>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <p><strong>Bachelor of Science in Biometry and Informatics</strong></p>
+        <p>Kisii University, Kisii — <em>Graduation: 2024</em></p>
+        <p><strong>Relevant Coursework:</strong> Biostatistics, Epidemiology, Programming for Data Analysis, Research Methods</p>
+        <h2>Certifications</h2>
+        <p>Bachelor of Science in Biometry and Informatics Certificate - 2025</p>
+    </section>
+<!--
+      <section id="certifications">
+        <h2>Certifications</h2>
+        <p>Bachelor of Science in Biometry and Informatics Certificate - 2025</p>
+      </section>-->
+      
+      <section id="contact">
+        <h2>Contact Information</h2>
+        <p><strong>Phone:</strong> 0748824487</p>
+        <p><strong>Email:</strong> <a href="mailto:joseotingo2884@gmail.com">joseotingo2884@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> Joseph Opilo</p>
+        <p><strong>Portfolio:</strong> Joseph Opilo</p>
+      </section>
+
+      
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('active');
+    }
+
+    function showSection(id) {
+      const sections = document.querySelectorAll('.details section');
+      sections.forEach(section => {
+        if (section.id === id) {
+          section.classList.add('active');
+        } else {
+          section.classList.remove('active');
+        }
+      });
+    }
+  </script>
+  <footer style="background: #1f1f1f; color: #f1f1f1; text-align: center; padding: 20px 10px;">
+    <div style="margin-bottom: 10px;">
+      <a href="https://www.linkedin.com/in/josephopilo" target="_blank" style="margin: 0 10px; color: #00bcd4; text-decoration: none;">
+        🔗 LinkedIn
+      </a>
+      <a href="https://facebook.com" target="_blank" style="margin: 0 10px; color: #00bcd4; text-decoration: none;">
+        📘 Facebook
+      </a>
+      <a href="mailto:joseotingo2884@gmail.com" style="margin: 0 10px; color: #00bcd4; text-decoration: none;">
+        ✉️ Email
+      </a>
+      <a href="tel:+254748824487" style="margin: 0 10px; color: #00bcd4; text-decoration: none;">
+        📞 Contact
+      </a>
+      <span style="margin: 0 10px; color: #00bcd4;">
+        📍 Kisii, Kenya
+      </span>
+    </div>
+    <div>
+      <p style="margin: 5px 0;">References available upon request.</p>
+    </div>
+  </footer>
+</body>
+</html>
